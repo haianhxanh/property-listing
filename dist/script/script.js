@@ -189,8 +189,10 @@ compareBtn.addEventListener('click', () => {
 
 // button to offer options to either start selecting properties, or to clear the comparison tool if the users want to start over
 clearAllBtn.addEventListener('click', () => {
+  location.reload();
   comparisonItem1.innerHTML = '';
   comparisonItem2.innerHTML = '';
+  
   clearAllBtn.innerHTML = 'Select from our listing to compare';
   compareBtn.classList.add('nothing-to-compare');
 })

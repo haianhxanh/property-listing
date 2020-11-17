@@ -127,7 +127,8 @@ img {
           transform: scale(2); }
 
 .item__heading {
-  text-align: center; }
+  text-align: center;
+  min-width: 70%; }
   .item__heading h4 {
     margin: 1em; }
 

@@ -174,8 +174,6 @@ for (a = 0; a < data.length; a++) {
 compareBtn.addEventListener('click', () => {
   item1_priceElm.innerHTML += `<div style="color: red"> Price per m2: ${item1_rate.toLocaleString()} CZK </div>`;
   item2_priceElm.innerHTML += `<div style="color: red"> Price per m2: ${item2_rate.toLocaleString()} CZK </div>`;
-  item1_amenitiesElm.innerHTML = `<li style="color:red; font-weight: bold;">${item1_amenities} amenities in the surrounding</li> ${item1_amenitiesElm.innerHTML}`;
-  item2_amenitiesElm.innerHTML = `<li style="color:red; font-weight: bold;">${item2_amenities} amenities in the surrounding</li> ${item2_amenitiesElm.innerHTML}`;
 
   if (item1_rate < item2_rate) {
     item1_priceElm.classList.add('better');
@@ -185,12 +183,18 @@ compareBtn.addEventListener('click', () => {
     item2_priceElm.innerHTML += `<div>Better price value!</div>`;
   }
 
+  item1_amenitiesElm.innerHTML = `<li style="color:red; font-weight: bold;">${item1_amenities} amenities in the surrounding</li> ${item1_amenitiesElm.innerHTML}`;
+  item2_amenitiesElm.innerHTML = `<li style="color:red; font-weight: bold;">${item2_amenities} amenities in the surrounding</li> ${item2_amenitiesElm.innerHTML}`;
+
+
 })
 
 // button to offer options to either start selecting properties, or to clear the comparison tool if the users want to start over
 clearAllBtn.addEventListener('click', () => {
+  location.reload();
   comparisonItem1.innerHTML = '';
   comparisonItem2.innerHTML = '';
+  
   clearAllBtn.innerHTML = 'Select from our listing to compare';
   compareBtn.classList.add('nothing-to-compare');
 })
