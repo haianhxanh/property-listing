@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif; }
+
+body {
+  margin: 0; }
+
+header {
+  width: 100%; }
+
+main {
+  padding: 2%; }
+  main .content-heading {
+    text-align: center; }
+
+.nav {
+  padding: 0 10%;
+  height: 7rem;
+  width: 100%;
+  background-color: #EFE8D8;
+  border-bottom: 2px solid #13544C;
+  display: flex;
+  align-items: center; }
+  .nav__img img {
+    width: 5rem; }
+  .nav__link {
+    height: 3rem;
+    background-color: #13544C;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .nav__link__item {
+      font-size: 1.5rem;
+      color: #EFE8D8;
+      text-decoration: none; }
+      .nav__link__item:hover {
+        color: white;
+        text-decoration: underline; }
+
+.welcome-note {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px #13544C; }
+
+.content-data {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .content-data .property {
+    width: 25%;
+    padding: 1%;
+    margin: 1%;
+    border: 4px solid #13544C; }
+    .content-data .property:hover {
+      -webkit-box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.75); }
+  .content-data .hide {
+    display: none; }
+
+img {
+  width: 100%;
+  margin: 0 auto; }
+
+.location {
+  text-align: center; }
+
+.description .table {
+  padding: 1%;
+  display: flex;
+  flex-direction: column; }
+  .description .table__body {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #EFE8D8; }
+  .description .table__row {
+    padding: 0.5rem;
+    display: flex;
+    border-bottom: 1px solid white; }
+    .description .table__row__title {
+      width: 50%;
+      text-align: left;
+      border-right: 1px solid white; }
+    .description .table__row__data {
+      width: 50%;
+      padding-left: 5px; }
+    .description .table__row ul {
+      padding-left: 5px;
+      margin: 0;
+      list-style-type: none; }
+      .description .table__row ul li {
+        text-align: left; }
+
+.comparison-background {
+  background-image: url("../img/banner.jpg"), url("https://www.dropbox.com/s/4gtaizg3xhteeik/about-us-test-banner.jpg?raw=1");
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.comparison-tool {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column; }
+  .comparison-tool .comparison-container {
+    display: flex;
+    justify-content: space-around; }
+    .comparison-tool .comparison-container .comparison__item__1, .comparison-tool .comparison-container .comparison__item__2 {
+      width: 45%;
+      background-color: #EFE8D8;
+      display: flex; }
+    .comparison-tool .comparison-container .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .comparison-tool .comparison-container .item__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .comparison-tool .comparison-container .item img {
+        width: 200px;
+        transition: 0.8s; }
+        .comparison-tool .comparison-container .item img:hover {
+          transform: scale(2); }
+
+.item__heading {
+  text-align: center; }
+  .item__heading h4 {
+    margin: 1em; }
+
+.item__overview p {
+  margin: 0; }
+
+.btn {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+.clear-all, .pick {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: rgba(239, 232, 216, 0.8); }
+  .clear-all:hover, .pick:hover {
+    cursor: pointer; }
+
+.scroll, .compare {
+  background-color: #970000;
+  color: #EFE8D8;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0.5rem;
+  outline: none;
+  display: block; }
+  .scroll:hover, .compare:hover {
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.75); }
+
+.compare {
+  margin: 0 auto; }
+
+.nothing-to-compare {
+  display: none; }
+
+.scroll {
+  position: fixed;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem; }
+
+.better {
+  color: red;
+  font-weight: bold;
+  border: 2px solid red; }
+
+.about-text {
+  padding: 0 10%;
+  text-align: justify; }
+
+/*# sourceMappingURL=style.css.map */

@@ -4842,39 +4842,39 @@ const properties = [
   "building_area": "244",
   "land_area": "707"
   },
-  {
-  "id": 2262323548,
-  "name": "Prodej  chaty 80 m², pozemek 352 m²",
-  "name_extracted": "Prodej chaty",
-  "lat": 48.844513,
-  "lon": 17.312513,
-  "labels": {
-  "parking_lots": "Parking lots",
-  "partly_furnished": "Partly furnished",
-  "cellar": "Cellar"
-  },
-  "locality_labels": {
-  "playground": "Playground",
-  "small_shop": "Small shop",
-  "kindergarten": "Kindergarten",
-  "post_office": "Post office",
-  "restaurant": "Restaurant",
-  "sports": "Sports",
-  "train": "Train",
-  "bus_public_transport": "Bus public transport",
-  "school": "School"
-  },
-  "company_name": null,
-  "company_logo": null,
-  "locality": "Strážnice, okres Hodonín",
-  "images": [
-  "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_p/2FQF6q-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg",
-  "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_o/5RCBIhV-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg",
-  "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_o/6h8BIhW-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg"
-  ],
-  "is_new": false,
-  "prize_czk": 930000,
-  "building_area": "80",
-  "land_area": "352"
-  }
+  // {
+  // "id": 2262323548,
+  // "name": "Prodej  chaty 80 m², pozemek 352 m²",
+  // "name_extracted": "Prodej chaty",
+  // "lat": 48.844513,
+  // "lon": 17.312513,
+  // "labels": {
+  // "parking_lots": "Parking lots",
+  // "partly_furnished": "Partly furnished",
+  // "cellar": "Cellar"
+  // },
+  // "locality_labels": {
+  // "playground": "Playground",
+  // "small_shop": "Small shop",
+  // "kindergarten": "Kindergarten",
+  // "post_office": "Post office",
+  // "restaurant": "Restaurant",
+  // "sports": "Sports",
+  // "train": "Train",
+  // "bus_public_transport": "Bus public transport",
+  // "school": "School"
+  // },
+  // "company_name": null,
+  // "company_logo": null,
+  // "locality": "Strážnice, okres Hodonín",
+  // "images": [
+  // "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_p/2FQF6q-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg",
+  // "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_o/5RCBIhV-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg",
+  // "https://estate-comparison.codeboot.cz/images/d18-a-sdn-cz/d_18/c_img_H_o/6h8BIhW-jpeg-fl-res-400-300-3-shr--20-jpg-90.jpeg"
+  // ],
+  // "is_new": false,
+  // "prize_czk": 930000,
+  // "building_area": "80",
+  // "land_area": "352"
+  // }
 ]

@@ -1,3 +1,6 @@
+$primary_green: #13544C;
+$primary_beige: #EFE8D8;
+
 * {
   box-sizing: border-box;
   font-family: 'Oxygen', sans-serif;
@@ -7,14 +10,8 @@ body {
   margin: 0;
 }
 
-$primary_green: #13544C;
-$primary_beige: #EFE8D8;
-
-
-
 header {
   width: 100%;
-
 }
 
 main {
@@ -22,10 +19,9 @@ main {
 
   .content-heading {
     text-align: center;
-    // margin-top: 500px;
   }
-
 }
+
 .nav {
   padding: 0 10%;
   height: 7rem;
@@ -35,7 +31,6 @@ main {
 
   display: flex;
   align-items: center;
-
 
   &__img {
     img {
@@ -72,11 +67,8 @@ main {
   text-shadow: 2px 2px $primary_green;
 }
 
-
-
 .content-data {
   padding: 1%;
-  // width: 40vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -93,32 +85,12 @@ main {
 
   }
 
-
   .hide {
     display: none;
   }
 }
 
-.heading {
-  text-align: center;
 
-  h4 {  
-    margin: 1em;
-  }
-
-}
-
-.item-overview {
-  p {
-    margin: 0;
-  }
-}
-
-.photo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 img {
   width: 100%;
@@ -128,7 +100,6 @@ img {
 .location {
   text-align: center;
 }
-
 
 .description {
 
@@ -174,7 +145,7 @@ img {
 }
 
 .comparison-background {
-  background-image: url('https://www.dropbox.com/s/4gtaizg3xhteeik/about-us-test-banner.jpg?raw=1');
+  background-image: url('../img/banner.jpg'), url('https://www.dropbox.com/s/4gtaizg3xhteeik/about-us-test-banner.jpg?raw=1');
   background-size: 100% 120%;
   background-repeat: no-repeat;
   width: 100%;
@@ -188,7 +159,6 @@ img {
   display: flex;
   flex-direction: column;
 
-
   .comparison-container {
     display: flex;
     justify-content: space-around;
@@ -199,11 +169,17 @@ img {
       display: flex;
     }
 
-    .item-body {
+    .item {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      &__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
       img {
         width: 200px;
@@ -216,25 +192,72 @@ img {
   }
 }
 
+.item__heading {
+  text-align: center;
 
-.comparison__btn {
-  width: 100%;
-  button {
-    font-weight: bold;
-    font-size: 1.2rem;
+  h4 {  
+    margin: 1em;
   }
 }
 
-button {
-  border: none;
-  text-decoration: none;
-  outline: none;
-  display: block;
-  padding: 0.5rem;
-  width: 100%;
-  background-color: rgba($primary_beige, 0.8);
-
-  &:hover {
-    cursor: pointer;
+.item__overview {
+  p {
+    margin: 0;
   }
+}
+
+
+.btn {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+  .clear-all, .pick {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: rgba($primary_beige, 0.8);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .scroll, .compare {
+    background-color: rgb(151, 0, 0);
+    color: $primary_beige;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.5rem;
+    outline: none;
+    display: block;
+
+    &:hover {
+      -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.75);
+    }
+  } 
+    .compare {
+      margin: 0 auto;
+    }
+    .nothing-to-compare {
+      display: none;
+    }
+    .scroll {
+      position: fixed;
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+  .better {
+    color: red;
+    font-weight: bold;
+    border: 2px solid red;
+    }
+
+.about-text {
+  padding: 0 10%;
+  text-align: justify;
 }
